@@ -1,0 +1,327 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+ENTERPRISE FOODS
+
+Theme Name: Avada Child Theme
+Author: Tom Brookes & Tom Dent
+Author URI: http://www.doubledcreative.com
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+CONTENTS
+
+- Header
+- Footer
+- Media Queries
+	- 1024px
+	- 800px
+	- 500px
+	
+
+//////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/* HEADER */
+
+/* Main Header */
+.fusion-header-v4{
+	.fusion-sticky-header-wrapper{height:173px!important;
+		.fusion-header{
+			.fusion-row{
+				.fusion-logo{
+					.fusion-header-content-3-wrapper{
+						.fusion-header-tagline{
+							.fa-phone, .fa-border{padding: 5px 6px 4px 7px; border: solid 2px #F18624 !important; border-radius: 30px; font-size: 21px;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Sticky Header */
+.fusion-is-sticky{
+	.fusion-secondary-main-menu{border-bottom: 3px solid darken(@blue, @10per);}
+}
+
+/* Navigation Bar */
+.fusion-secondary-main-menu{border-bottom:3px solid darken(@blue, @10per);
+	.fusion-main-menu{max-width:1160px;margin:0 auto;
+		ul{
+			li{padding:0 20px!important;border-right:1px solid lighten(@blue, @10per);
+				&:first-of-type{border-left:1px solid lighten(@blue, @10per);}
+				&:hover{background-color: @orange;}
+				a{text-transform: uppercase;
+					.menu-text{vertical-align: middle; -webkit-font-smoothing: antialiased;}
+				}
+				.sub-menu{border-top:3px solid darken(@blue, @10per);
+					li{padding: 0!important; border: none!important;
+						&:last-of-type{
+							a{border: none;}
+						}
+						a{font-weight: 600; text-transform: uppercase; padding: 15px 20px!important; font-size: 14px;}
+					}
+				}
+			}
+		}
+	}
+}
+
+#menu-item-7961, #menu-item-8058, #menu-item-8057{display:none;}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* PAGE TITLE BAR */
+
+.fusion-page-title-bar{border-bottom:3px solid @orange;
+	.fusion-page-title-row{.main-max-width();
+		.fusion-page-title-wrapper{
+			.fusion-page-title-captions{
+				h1{text-align:left;font-weight:100;margin-top:-10px;text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);}
+				.fusion-page-title-secondary{
+					.fusion-breadcrumbs{text-align:left;-webkit-font-smoothing:subpixel-antialiased!important;text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+						a{
+							&:hover{text-decoration:underline;}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/* FOOTER */
+
+.fusion-footer{
+	.fusion-footer-widget-area{
+		.fusion-row{
+			.fusion-columns{
+				.fusion-column{margin-bottom: 0!important;
+					.ddc-footer{margin: 0 auto!important; padding: 0!important; .main-max-width();
+						.fusion-title{margin: 0!important; padding-bottom: 10px!important;
+							h3{text-transform: capitalize; color: @blue; font-size: 18px!important; line-height: 1.5em!important;}
+						}
+						p{font-size: 14px!important; line-height: 1.8em!important; -webkit-font-smoothing: subpixel-antialiased !important;}
+						a:hover{color: @blue;}
+						.footer-col-1{
+							.ddc-logo{
+								img{width: 260px;}
+							}
+							p{margin: 13px 0 24px;}
+						}
+						.footer-col-2{
+							.widget, .widget_nav_menu{margin-bottom: 0!important;
+								.menu-quick-nav-container{
+									ul{
+										li{line-height: 30px;border-bottom:none;padding:0;
+											a{font-size: 14px!important; -webkit-font-smoothing: subpixel-antialiased !important;color:@white;
+												&:hover{color:@blue;}
+												&:before{display:none;}
+											}
+										}
+									}
+								}	
+							}	
+						}
+						.footer-col-3{
+							.ddc-checklist{
+								.fusion-li-item-content{-webkit-font-smoothing: subpixel-antialiased!important;}
+								.fa-map-marker{font-size: 28px!important; padding-top: 2px;}
+								.fa-envelope{font-size: 20px!important; padding-top: 2px;}
+								.fa-phone{font-size: 24px!important; padding-top: 2px;}	
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 1024px ///////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1024px) {
+	
+	
+	/* NAVIGATION */
+
+	/* Mobile Main Header */
+	.fusion-mobile-menu-design-modern{
+		.fusion-sticky-header-wrapper{height: auto!important;
+			.fusion-header{padding: 15px 20px!important;
+				.fusion-row{
+					.fusion-logo{
+						.fusion-logo-link{}
+						.fusion-header-content-3-wrapper{display: none!important;}
+					}
+					.fusion-mobile-menu-icons{
+						.fusion-icon{font-size: 25px; padding: 20px 20px 20px 50px; margin: -12px -23px;}
+					}
+				}
+			}
+		}
+	}
+	
+	/* Mobile Navigation Bar */
+	.fusion-secondary-main-menu{
+		.fusion-mobile-nav-holder{
+			.fusion-menu{
+				.fusion-mobile-nav-item{
+					&:last-of-type{
+						a{border: none;}
+					}				
+					a{padding-left: 20px;
+						.menu-text{-webkit-font-smoothing: subpixel-antialiased !important;}
+					}		
+					.fusion-open-submenu{width: inherit; margin-right: 10px; padding: 0 14px; color: @white;
+						&:hover{color: @white;}
+					}		
+					.sub-menu{		
+						.fusion-mobile-nav-item{
+							a{background-color: lighten(@blue, @10per); padding-left: 20px; border-bottom: 1px solid lighten(@blue, @15per); -webkit-font-smoothing: subpixel-antialiased !important;
+								&:hover{background-color: lighten(@blue, @5per);}
+								&:before{display: none;}
+							}
+						}			
+						.fusion-mobile-current-nav-item{
+							a{background-color: lighten(@blue, @5per);}
+						}
+					}		
+				}
+			}
+		}		
+	}	
+	
+	#mobile-menu-item-7961, #mobile-menu-item-8058, #mobile-menu-item-8057{display: none!important;}
+	
+
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 800px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 800px) {
+	
+	
+	/* PAGE TITLE BAR */
+	
+	.fusion-page-title-bar{padding: 8% 30px!important;
+		.fusion-page-title-row{
+			.fusion-page-title-wrapper{
+				.fusion-page-title-captions{
+					h1{text-align: center; margin-top: 0px; zoom: 0.8;}
+				}
+			}
+		}
+	}
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	
+	/* FOOTER */
+
+	.fusion-footer{
+		.fusion-footer-widget-area{padding-top: 50px; padding-bottom: 23px;
+			.fusion-row{
+				.fusion-columns{
+					.fusion-column{
+						.ddc-footer{
+							.footer-col-1{width: 100%!important; margin-bottom: 40px!important;}
+							.footer-col-2{width: 40%!important;}
+							.footer-col-3{width: 60%!important;}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	
+}
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+/* MEDIA QUERIES 500px ////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 500px) {
+	
+	
+	/* PAGE TITLE BAR */
+	
+	.fusion-page-title-bar{padding: 8% 30px!important;
+		.fusion-page-title-row{
+			.fusion-page-title-wrapper{
+				.fusion-page-title-captions{
+					h1{text-align: center; margin-top: 0px; zoom: 0.7;}
+				}
+			}
+		}
+	}
+	
+	
+	///////////////////////////////////////////////////////////////////////////////////////////////
+	
+	
+	/* FOOTER */
+
+	.fusion-footer{
+		.fusion-footer-widget-area{padding-top: 50px; padding-bottom: 43px;
+			.fusion-row{
+				.fusion-columns{
+					.fusion-column{
+						.ddc-footer{
+							.footer-col-1{width: 100%!important; margin-bottom: 43px!important;}
+							.footer-col-2{width: 100%!important; margin-bottom: 34px!important;}
+							.footer-col-3{width: 100%!important; margin-bottom: 0!important;}
+						}
+					}
+				}
+			}
+		}	
+	}
+	
+	
+}
+
+
+
+
+
+
+
