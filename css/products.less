@@ -31,13 +31,13 @@ Author URI: https://www.doubledcreative.com
 	}
 }
 
-.parent-pageid-7797{
+/*.parent-pageid-7797{
 	.post-content{
 		.fusion-fullwidth{
 			&:first-of-type{display:none;}
 		}
 	}
-}
+}*/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -260,11 +260,15 @@ Author URI: https://www.doubledcreative.com
 /* Product Overview Layout */
 .wpv-loop, .js-wpv-loop{width: 100%;
 	tbody{
-		tr{margin: 0 3% 3% 0; width: 31.33%; display: inline-block; background: @slate; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; overflow: hidden;
+		tr{margin:1%;width:31%!important; display: inline-block; background: @slate; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; overflow: hidden;
 			&:nth-of-type(3n){margin-right: 0!important;}
 			&:hover{background-color: darken(@slate, @5per);}
 			.js-ef-style1{
-				.js-ef-fiximage{width: 101%; overflow: hidden; background-color: @white; text-align: center;}
+				.js-ef-fiximage{width: 101%!important; overflow: hidden; background-color: @white; text-align: center;
+					a{
+						img{width:100%!important;}
+					}
+				}
 				a{color: @white!important; display: table; width: 100%;text-transform:uppercase;
 					.js-ef-wordwrap{font-size: 14px; padding: 10px 15px; line-height: 20px; font-weight: 400; display: table-cell; height: 65px; vertical-align: middle; text-align: center; -webkit-font-smoothing: subpixel-antialiased!important;}
 						
