@@ -28,10 +28,11 @@ CONTENTS
 
 /* Main Header */
 .fusion-header-v4{
-	.fusion-sticky-header-wrapper{height:173px!important;
+	.fusion-sticky-header-wrapper{height: 173px!important;
 		.fusion-header{
 			.fusion-row{
 				.fusion-logo{
+					img{width: 350px; height: 52px;}
 					.fusion-header-content-3-wrapper{
 						.fusion-header-tagline{
 							.fa-phone, .fa-border{padding: 5px 6px 4px 7px; border: solid 2px #F18624 !important; border-radius: 30px; font-size: 21px;}
@@ -52,26 +53,73 @@ CONTENTS
 .fusion-secondary-main-menu{border-bottom:3px solid darken(@blue, @10per);
 	.fusion-main-menu{max-width:1160px;margin:0 auto;
 		ul{
-			li{padding:0 20px!important;border-right:1px solid lighten(@blue, @10per);
-				&:first-of-type{border-left:1px solid lighten(@blue, @10per);}
+			
+			
+			li{padding: 0 20px!important; border-right: 1px solid lighten(@blue, @10per);
+				&:first-of-type{border-left: 1px solid lighten(@blue, @10per);}
 				&:hover{background-color: @orange;}
 				a{text-transform: uppercase;
 					.menu-text{vertical-align: middle; -webkit-font-smoothing: antialiased;}
 				}
-				.sub-menu{border-top:3px solid darken(@blue, @10per);
+				
+				.sub-menu{border-top: 3px solid darken(@blue, @10per); width: 285px;
 					li{padding: 0!important; border: none!important;
 						&:last-of-type{
 							a{border: none;}
+							.sub-menu{
+								li{border-bottom: 1px solid #139cce!important;
+									&:last-of-type{border: none!important;}
+								}
+							}
 						}
-						a{font-weight: 600; text-transform: uppercase; padding: 15px 20px!important; font-size: 14px;}
+						a{font-weight: 600; text-transform: uppercase; padding: 10px 20px!important; font-size: 12px;}
+						
+						.ddc-click{pointer-events: none; cursor: default;
+							a{pointer-events: none!important; cursor: default!important;}
+						}
+						.sub-menu{left: 285px;}	
 					}
 				}
 			}
+			
+			
+			
+			/*
+			.regions{
+				.sub-menu{width: 250px;
+					.menu-item{
+						a{font-size: 12px!important; padding: 10px 20px!important;}
+						.sub-menu{left: 250px;}		
+					}
+					.ddc-click{pointer-events: none; cursor: default;
+						a{pointer-events: none!important; cursor: default!important;}
+					}
+				}
+			}
+			*/
+			
+			
 		}
 	}
 }
 
 #menu-item-7961, #menu-item-8058, #menu-item-8057{display:none;}
+
+/* Header Buttons */
+.ddc-login, .ddc-logout{.border-radius(); font-size: 16px!important; line-height: 17px!important; padding: 10px 25px!important; background: @orange; color: @white; font-family: 'PT Sans'; font-weight: 400; margin-left: 30px; top: -2px; position: relative;
+	.fas{font-family: 'FontAwesome'; margin-right: 5px; font-style: normal;}
+	&:hover{background: #d87820!important;}
+}
+
+/* Logged-In Header Buttons */
+.logged-in{
+	.ddc-logout{display: inline-block!important;}
+	.ddc-login{display: none!important;}
+}
+
+/* Logged-Out Header Buttons */
+.ddc-logout{display: none!important;}
+.ddc-login{display: inline-block!important;}
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +127,7 @@ CONTENTS
 
 /* PAGE TITLE BAR */
 
-.fusion-page-title-bar{border-bottom:3px solid @orange;
+.fusion-page-title-bar{border-bottom:3px solid @orange;margin-bottom:0!important;
 	.fusion-page-title-row{.main-max-width();
 		.fusion-page-title-wrapper{
 			.fusion-page-title-captions{
@@ -103,11 +151,21 @@ CONTENTS
 /* FOOTER */
 
 .fusion-footer{
-	.fusion-footer-widget-area{
+	.fusion-footer-widget-area{padding-top: 0;
 		.fusion-row{
 			.fusion-columns{
 				.fusion-column{margin-bottom: 0!important;
-					.ddc-footer{margin: 0 auto!important; padding: 0!important; .main-max-width();
+					
+					.ddc-supplier{margin: 0 -30px!important; border-top: 3px solid #1890be !important;
+						.fusion-row{max-width: 900px!important; margin: 0 auto!important; padding: 60px 30px;
+							h2{color: @white;}
+							.fontawesome-icon{font-size: 22px!important; line-height: 48px!important; height: 50px!important; width: 50px!important; border: none; background: @orange; .border-radius(@border-radius: 25px);}
+							.copy{color: @white; text-align: center;}
+							.fusion-button-wrapper{margin-top: 30px!important;}		
+						}
+					}
+					
+					.ddc-footer{margin: 0 auto!important; padding: 80px 0 0!important; .main-max-width();
 						.fusion-title{margin: 0!important; padding-bottom: 10px!important;
 							h3{text-transform: capitalize; color: @blue; font-size: 18px!important; line-height: 1.5em!important;}
 						}
@@ -244,8 +302,7 @@ CONTENTS
 	
 	
 	///////////////////////////////////////////////////////////////////////////////////////////////
-	
-	
+		
 	
 	/* FOOTER */
 
